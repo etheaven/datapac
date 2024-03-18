@@ -1,0 +1,16 @@
+@LibraryManagement_HostAddress = http://localhost:5101
+
+###
+GET {{LibraryManagement_HostAddress}}/api/books/
+Accept: application/json
+
+###
+POST {{LibraryManagement_HostAddress}}/api/books/
+Content-Type: application/json
+
+{
+  "title": "Example Book Title",
+  "author": "Author Name"
+}
+
+###
